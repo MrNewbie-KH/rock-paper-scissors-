@@ -70,15 +70,38 @@ header h1 {
   width: 100%;
   padding: 30px;
 }
-.res .player {
-  display: flex;
-  flex-direction: column;
-}
-
+.res .player,
 .res .computer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
 }
+.added-human-score {
+  color: greenyellow;
+}
+.added-computer-score {
+  color: red;
+}
+.added-red {
+  color: red;
+}
+.added-green {
+  color: greenyellow;
+}
+.added-white {
+  color: white;
+}
+h3 span {
+  font-size: 36px;
+  color: #ffc600;
+  font-family: serif;
+}
+#who {
+  font-size: 24px;
+}
+
 /* =====================ADDING selectionSection======================= */
 .choices-container {
   padding-top: 100px;
