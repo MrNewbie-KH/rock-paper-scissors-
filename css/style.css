@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background-color: #173767;
+}
+
+@font-face {
+  font-family: h1-font;
+  src: url("PressStart2P-Regular.ttf");
+}
+
+header h1 {
+  padding: 30px;
+  color: #fac650;
+  font-family: h1-font, cursive;
+  font-size: 32px;
+  letter-spacing: 0px;
+  word-spacing: 5px;
+}
+/* ============================================================= */
+.container {
+  margin-top: -50px;
+  background-color: #222831;
+  height: 100vh;
+}
+
+.text {
+  padding-top: 70px;
+  text-align: center;
+  color: #ddd;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+.text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  animation: t1 1s ease-in-out 1s;
+}
+
+.text h3 {
+  margin-top: -20px;
+  font-size: 19px;
+  animation: t2 1s ease-in-out 1s;
+  animation-delay: 1s;
+}
+/* ====================RESULTS SECTION================== */
+.result-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.res {
+  padding: 50px;
+  display: flex;
+  gap: 30px;
+}
+.player,
+.computer {
+  color: #fac650;
+  font-family: h1-font, cursive;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+  padding: 30px;
+}
+.res .player {
+  display: flex;
+  flex-direction: column;
+}
+
+.res .computer {
+  display: flex;
+  flex-direction: column;
+}
+/* =====================ADDING selectionSection======================= */
+.choices-container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.human-container {
+  border-right: 3px solid #fac650;
+  height: 265px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding-right: 32px;
+}
+.computer-container {
+  border-left: 3px solid #fac650ed;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 32px;
+}
+.rps-choice {
+  font-size: 96px;
+  border-radius: 50%;
+}
+.rps-choice button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+.rps-choice button:hover {
+  transform: scale(1.1);
+  border-radius: 50%;
+  box-shadow: 0 0 5px #d3e01b;
+}
+footer {
+  text-align: center;
+  background-color: #173767;
+  padding: 15px;
+  font-size: 16px;
+  color: #ffc600;
+}

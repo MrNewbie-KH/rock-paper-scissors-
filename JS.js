@@ -8,8 +8,8 @@ const getComputerChoice = function (number) {
   else choice = "SCISSORS";
   return choice;
 };
-const playerChoice = function (selection) {
-  selection = selection.toUpperCase();
+const playerChoice = function () {
+  const selection = window.prompt("Please enter your choice").toUpperCase();
   return selection;
 };
 
@@ -26,7 +26,7 @@ const playRound = function (computer, human) {
 const game = function () {
   for (let i = 0; i < 5; i++) {
     const computer = getComputerChoice(3);
-    const human = playerChoice("rock");
+    const human = playerChoice();
     playRound(computer, human);
   }
 };

@@ -1,0 +1,6 @@
+1. Revise Your Logic Before Coding -> pesudo code or diagrams
+2. Clearly Expose the Structure of the Page -> using semantic elements in html
+3. Use the Correct Indentation
+4. Write Explanatory Comments ->Explain why it works not how -> all must be easy to read
+5. Avoid Extremely Large Functions
+6. Use Naming Standards for Functions and Variables
