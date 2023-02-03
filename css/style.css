@@ -139,7 +139,7 @@ h3 span {
 .rps-choice button:hover {
   transform: scale(1.1);
   border-radius: 50%;
-  box-shadow: 0 0 5px #d3e01b;
+  box-shadow: 0 0 10px greenyellow;
 }
 footer {
   text-align: center;
@@ -148,3 +148,12 @@ footer {
   font-size: 16px;
   color: #ffc600;
 }
+/* Trying to make it real as possible as i can */
+/* .hidden { */
+/* document.getElementsByClassName('appBanner').style.visibility='hidden';
+   */
+/* visibility: hidden;
+}
+.big-one {
+  background-color: #173767;
+} */

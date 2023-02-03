@@ -9,6 +9,9 @@ const score1 = document.createElement("p");
 const score2 = document.createElement("p");
 const statusOfCurrentMove = document.getElementById("status-message");
 const whoWinsWhoLoses = document.getElementById("who");
+const bigOne = document.querySelector(".big-one");
+const buttonStart = document.createElement("button");
+const buttonreset = document.createElement("button");
 // ==========================================
 score1.classList.add("added-human-score");
 score2.classList.add("added-computer-score");
@@ -80,3 +83,4 @@ window.addEventListener("click", function (e) {
   }
 });
 // ============================================================
+// adding start and restart button
