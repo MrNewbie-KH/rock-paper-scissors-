@@ -25,11 +25,18 @@ const getComputerChoice = function (number) {
 };
 // the main function that compares values
 const playRound = function (computer, human) {
+  const array = statusOfCurrentMove.className.split(" ");
+  for (let i = 0; i < array.length; i++) {
+    statusOfCurrentMove.classList.remove(array[0]);
+    whoWinsWhoLoses.classList.remove(array[0]);
+    array.pop();
+  }
   if (computer === human) {
     statusOfCurrentMove.textContent = "It's a tie";
     whoWinsWhoLoses.textContent = `Player choice ${human} matches Computer Choice ${computer}`;
-    statusOfCurrentMove.classList.add("added-white");
-    whoWinsWhoLoses.classList.add("added-white");
+    array.push("added-white");
+    statusOfCurrentMove.classList.add(array[0]);
+    whoWinsWhoLoses.classList.add(array[0]);
   } else if (
     (computer == "ROCK" && human === "SCISSORS") ||
     (computer == "PAPER" && human === "ROCK") ||
@@ -38,14 +45,16 @@ const playRound = function (computer, human) {
     computerScore++;
     statusOfCurrentMove.textContent = "Lose";
     whoWinsWhoLoses.textContent = ` ${computer} Beats ${human}`;
-    statusOfCurrentMove.classList.add("added-red");
-    whoWinsWhoLoses.classList.add("added-red");
+    array.push("added-red");
+    statusOfCurrentMove.classList.add(array[0]);
+    whoWinsWhoLoses.classList.add(array[0]);
   } else {
     humanScore++;
     statusOfCurrentMove.textContent = "Win";
     whoWinsWhoLoses.textContent = `${human} Beats ${computer}`;
-    statusOfCurrentMove.classList.add("added-green");
-    whoWinsWhoLoses.classList.add("added-green");
+    array.push("added-green");
+    statusOfCurrentMove.classList.add(array[0]);
+    whoWinsWhoLoses.classList.add(array[0]);
   }
 };
 // =========================================================
