@@ -30,4 +30,15 @@ const game = function () {
     playRound(computer, human);
   }
 };
-game();
+// game();
+let humanScore = 0,
+  computerScore = 0;
+// while (humanScore != 5 && computerScore != 5) {
+window.addEventListener("click", function (e) {
+  let choice;
+  if (e.target.classList.contains("rock")) choice = "ROCK";
+  else if (e.target.classList.contains("paper")) choice = "PAPER";
+  else if (e.target.classList.contains("scissors")) choice = "SCISSORS";
+  if (choice) console.log(choice);
+});
+// }
